@@ -1,0 +1,10 @@
+name: rydefine
+title:
+username:
+account: ergoanalytics
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2034320
+bundleId: 2953357
+url: https://ergoanalytics.shinyapps.io/rydefine/
+when: 1585738711.79064

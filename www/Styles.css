@@ -1,0 +1,158 @@
+/* Customize the label (the container) */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+* {font-family: Roboto; !important;
+}
+
+body {
+  background-color: #FFFFFF
+}
+
+
+* {
+   text-align: center;
+   margin: auto;
+}
+
+
+.btn {
+  color:#FFFFFF !important;
+  background-color:#66C2A5 !important;
+  border-color:#66C2A5 !important;
+}
+
+
+.shiny-input-radiogroup {
+  color: #AAAAAA;
+  width: 100%;
+  height: 100px;
+}
+
+.shiny-input-radiogroup input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.shiny-input-radiogroup label{
+  display: inline;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 25px 25px 25px 25px;
+  margin: 25px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.shiny-input-container label{
+  display: inline;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 25px 25px 25px 25px;
+  margin: 25px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+ 
+}
+
+
+.shiny-input-radiogroup label:hover {
+	color: #FFFFFF;
+}
+
+.shiny-input-radiogroup input[type=radio]:checked+* {
+  color:#66C2A5 !important;
+}
+
+
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+
+
+@keyframes bounceInLeft {
+   0% {
+        opacity: 0;
+        transform: translateX(-2000px);
+   }
+   60% {
+         opacity: 1;
+         transform: translateX(30px);
+   }
+   80% {
+         transform: translateX(-10px);
+   }
+   100% {
+         transform: translateX(0);
+   }
+  }
+
+@keyframes bounceInTop {
+   0% {
+        opacity: 0;
+        transform: translateY(-2000px);
+   }
+   60% {
+         opacity: 1;
+         transform: translateY(30px);
+   }
+   80% {
+         transform: translateY(-10px);
+   }
+   100% {
+         transform: translateY(0);
+   }
+  }
+
+@keyframes bounceInRight {
+   0% {
+        opacity: 0;
+        transform: translateX(2000px);
+   }
+   60% {
+         opacity: 1;
+         transform: translateX(30px);
+   }
+   80% {
+         transform: translateX(-10px);
+   }
+   100% {
+         transform: translateX(0);
+   }
+  }
+
+.btn {
+  animation: bounceInLeft 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+.shiny-input-radiogroup {
+  animation: bounceInRight 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+
+.pielayer {
+  animation: bounceInTop 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+
+.plot-container.plotly {
+
+}
+
+/*.navbar-item img {min-height: 3rem !important;}*/
+
+.navbar{
+   margin-bottom: 0px;
+}
